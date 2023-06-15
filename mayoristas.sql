@@ -27,5 +27,5 @@ values
 		"Patricia Rodríguez",
 		"677665544",
 		"Avenida Diagonal 22, planta 2, apto. 2",
-		"Yolanda Díaz",
+		"Yolanda Díaz"
 	);
