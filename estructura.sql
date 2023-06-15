@@ -3,8 +3,12 @@ drop database if exists agencia;
 -- Creamos la base de datos
 create database agencia;
 
+show warnings;
+
 -- Nos cambiamos a esa base de datos
 use agencia;
+
+show warnings;
 
 -- Tabla de mayoristas
 create table mayoristas (
@@ -14,6 +18,8 @@ create table mayoristas (
 	direccion varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
 	contacto varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci
 ) ENGINE = INNODB DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci;
+
+show warnings;
 
 -- Tabla de viajes
 create table viajes (
@@ -26,6 +32,8 @@ create table viajes (
 	foreign key (idmayorista) references mayoristas(idmayorista)
 );
 
+show warnings;
+
 -- Tabla clientes
 create table clientes (
 	idcliente int unsigned not null auto_increment primary key,
@@ -33,6 +41,8 @@ create table clientes (
 	poblacion varchar(40) not null,
 	telefono char(9) not null
 ) ENGINE = INNODB;
+
+show warnings;
 
 -- Tabla ventas
 create table ventas (
@@ -46,3 +56,5 @@ create table ventas (
 	index(idviaje),
 	foreign key (idviaje) references viajes(idviaje)
 );
+
+show warnings;
