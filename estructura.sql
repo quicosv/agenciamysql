@@ -1,3 +1,5 @@
+-- Borramos la base de datos si existe
+drop database if exists agencia;
 -- Creamos la base de datos
 create database agencia;
 
