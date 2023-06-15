@@ -5,7 +5,7 @@ drop database if exists agencia;
 create database agencia;
 
 -- Modificamos la codificación de la base de datos a UTF8
-ALTER DATABASE libreria CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER DATABASE agencia CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 show warnings;
 
