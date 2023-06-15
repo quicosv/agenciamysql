@@ -11,11 +11,11 @@ show warnings;
 -- Tabla de mayoristas
 create table mayoristas (
 	idmayorista int unsigned not null auto_increment primary key,
-	nommbre varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
-	telefono char(9) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
-	direccion varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
-	contacto varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci
-) ENGINE = INNODB DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci;
+	nommbre varchar(20),
+	telefono char(9),
+	direccion varchar(50),
+	contacto varchar(20)
+) ENGINE = INNODB;
 
 show warnings;
 
@@ -23,7 +23,7 @@ show warnings;
 create table viajes (
 	idviaje int unsigned auto_increment primary key,
 	duracion tinyint unsigned,
-	nombre varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
+	nombre varchar(20),
 	precio decimal(7, 2),
 	idmayorista int unsigned,
 	index (idmayorista),
