@@ -1,28 +1,42 @@
+-- Borramos la base de datos si existe
+drop database if exists agencia;
+
 -- Creamos la base de datos
 create database agencia;
+
+-- Modificamos la codificación de la base de datos a UTF8
+ALTER DATABASE agencia CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+show warnings;
 
 -- Nos cambiamos a esa base de datos
 use agencia;
 
+show warnings;
+
 -- Tabla de mayoristas
 create table mayoristas (
 	idmayorista int unsigned not null auto_increment primary key,
-	nommbre varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
-	telefono char(9) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
-	direccion varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
-	contacto varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci
-) ENGINE = INNODB DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci;
+	nommbre varchar(20),
+	telefono char(9),
+	direccion varchar(50),
+	contacto varchar(20)
+) ENGINE = INNODB;
+
+show warnings;
 
 -- Tabla de viajes
 create table viajes (
 	idviaje int unsigned auto_increment primary key,
 	duracion tinyint unsigned,
-	nombre varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci,
+	nombre varchar(20),
 	precio decimal(7, 2),
 	idmayorista int unsigned,
 	index (idmayorista),
 	foreign key (idmayorista) references mayoristas(idmayorista)
 );
+
+show warnings;
 
 -- Tabla clientes
 create table clientes (
@@ -31,6 +45,8 @@ create table clientes (
 	poblacion varchar(40) not null,
 	telefono char(9) not null
 ) ENGINE = INNODB;
+
+show warnings;
 
 -- Tabla ventas
 create table ventas (
@@ -44,3 +60,5 @@ create table ventas (
 	index(idviaje),
 	foreign key (idviaje) references viajes(idviaje)
 );
+
+show warnings;
