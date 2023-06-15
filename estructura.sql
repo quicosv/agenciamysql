@@ -22,7 +22,9 @@ create table viajes (
 	idmayorista int unsigned,
 	index (idmayorista),
 	foreign key (idmayorista) references mayoristas(idmayorista)
-) -- Tabla clientes
+);
+
+-- Tabla clientes
 create table clientes (
 	idcliente int unsigned not null auto_increment primary key,
 	nombre varchar(30) not null,
