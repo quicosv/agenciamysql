@@ -1,8 +1,8 @@
 insert into
 	ventas (
-		id_cliente,
+		idcliente,
 		fechasalida,
-		id_viaje,
+		idviaje,
 		segurocancelacion
 	)
 values
