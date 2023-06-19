@@ -7,12 +7,10 @@ create database agencia;
 -- Modificamos la codificación de la base de datos a UTF8
 ALTER DATABASE agencia CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-show warnings;
 
 -- Nos cambiamos a esa base de datos
 use agencia;
 
-show warnings;
 
 -- Tabla de mayoristas
 create table mayoristas (
@@ -23,7 +21,6 @@ create table mayoristas (
 	contacto varchar(20)
 ) ENGINE = INNODB;
 
-show warnings;
 
 -- Tabla de viajes
 create table viajes (
@@ -36,7 +33,6 @@ create table viajes (
 	foreign key (idmayorista) references mayoristas(idmayorista)
 );
 
-show warnings;
 
 -- Tabla clientes
 create table clientes (
@@ -46,7 +42,6 @@ create table clientes (
 	telefono char(9) not null
 ) ENGINE = INNODB;
 
-show warnings;
 
 -- Tabla ventas
 create table ventas (
@@ -61,4 +56,3 @@ create table ventas (
 	foreign key (idviaje) references viajes(idviaje)
 );
 
-show warnings;
