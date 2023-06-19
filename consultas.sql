@@ -1,7 +1,7 @@
 -- Cambiar nombre del segundo mayorista
 update mayoristas set nombre="timotours" where idmayorista=2;
 -- Insertar un mayorista
-insert into mayoristas (
+insert into mayoristas values (
 	default,
 	"Corruptours",
 	"654321000",
