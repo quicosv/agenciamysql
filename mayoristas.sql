@@ -1,3 +1,4 @@
+truncate mayoristas;
 INSERT INTO
 	mayoristas
 VALUES

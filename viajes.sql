@@ -1,3 +1,4 @@
+truncate viajes;
 insert into viajes values
 (
 	default,

@@ -1,3 +1,4 @@
+truncate clientes;
 insert into clientes values
   (Default, "Carlos García", "Málaga", "952323930"),
   (Default, "Luisa Ortega", "Granada", "958232581"),
