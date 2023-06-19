@@ -19,3 +19,13 @@ select * from viajes order by precio desc limit 1;
 select * from viajes where duracion>6 and precio>1000;
 -- Clientes de Barcelona ordenados por nombre
 select * from clientes where ciudad="Barcelona" order by nombre;
+-- Cantidad de viajes y precio medio
+SELECT COUNT(*) AS cantidadViajes, AVG(precio) as PrecioMedio from viajes;
+-- Viajes entre 1000 y 5000 euros
+select * from viajes where precio between 1000 and 5000;
+-- Clientes de málaga y Granada
+select * from clientes where ciudad in('Málaga','Granada');
+-- Clientes cuyo nombre empieza por Ma
+select * from clientes where nombre like "Ma%";
+-- Clientes cuya ciudad termina con a
+select * from clientes where poblacion like "%a";
