@@ -15,7 +15,7 @@ use agencia;
 -- Tabla de mayoristas
 create table mayoristas (
 	idmayorista int unsigned not null auto_increment primary key,
-	nommbre varchar(20),
+	nombre varchar(20),
 	telefono char(9),
 	direccion varchar(50),
 	contacto varchar(20)
