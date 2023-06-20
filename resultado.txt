@@ -1,0 +1,36 @@
+nombre	telefono
+Agapito Seisluces	620621622
+timotours	688612739
+Andrés Bermúdez	605153385
+Joaquín Guzmán	669136862
+Patricia Rodríguez	677665544
+idviaje	duracion	nombre	precio	idmayorista
+7	90	La Antártida	18000.00	5
+idviaje	duracion	nombre	precio	idmayorista
+1	8	Londres y París	1500.00	1
+2	15	Rusia	2400.00	2
+4	30	Islas de España	6000.00	4
+5	27	Tesoros peruanos	7000.00	2
+6	20	Canadá	5400.00	4
+7	90	La Antártida	18000.00	5
+idcliente	nombre	poblacion	telefono
+5	Laura Núñez	Barcelona	937225218
+6	Mario Benítez	Barcelona	934123456
+cantidadViajes	PrecioMedio
+8	5116.250000
+idviaje	duracion	nombre	precio	idmayorista
+1	8	Londres y París	1500.00	1
+2	15	Rusia	2400.00	2
+idcliente	nombre	poblacion	telefono
+1	Carlos García	Málaga	952323930
+2	Luisa Ortega	Granada	958232581
+idcliente	nombre	poblacion	telefono
+3	María Jiménez	Huelva	959654321
+6	Mario Benítez	Barcelona	934123456
+idcliente	nombre	poblacion	telefono
+1	Carlos García	Málaga	952323930
+2	Luisa Ortega	Granada	958232581
+3	María Jiménez	Huelva	959654321
+4	Roberto Chacón	Córdoba	957212830
+5	Laura Núñez	Barcelona	937225218
+6	Mario Benítez	Barcelona	934123456
