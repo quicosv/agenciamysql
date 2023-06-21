@@ -1,4 +1,4 @@
-insert into
+﻿insert into
 	clientes
 values
 	(Default, 'Carlos García', 'Málaga', '952323930'),
