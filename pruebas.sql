@@ -20,3 +20,5 @@ replace into pruebas values (
 );
 update pruebas set edad=25 where id=8;
 delete from pruebas where id=10;
+select @edadJoven:=min(edad) from pruebas;
+delete from pruebas where edad=@edadJoven;
