@@ -11,4 +11,4 @@ values
 		'957212830'
 	),
 	(Default, 'Laura Núñez', 'Barcelona', '937225218'),
-	(Default, 'Mario Benítez', 'Barcelona', 934123456);
+	(Default, 'Mario Benítez', 'Barcelona', '934123456');
