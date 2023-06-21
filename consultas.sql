@@ -2,7 +2,7 @@
 update
 	mayoristas
 set
-	nombre = "timotours"
+	nombre = 'timotours'
 where
 	idmayorista = 2;
 
@@ -12,17 +12,17 @@ insert into
 values
 	(
 		default,
-		"Corruptours",
-		"654321000",
-		"Calle La Cárcel 32, Sevilla",
-		"Bárcenas"
+		'Corruptours',
+		'654321000',
+		'Calle La Cárcel 32, Sevilla',
+		'Bárcenas'
 	);
 
 -- Eliminar al mayorista recién insertado por el nombre
 delete from
 	mayoristas
 where
-	nombre = "Corruptours";
+	nombre = 'Corruptours';
 
 -- Nombre y teléfono de los mayoristas
 select
@@ -56,7 +56,7 @@ select
 from
 	clientes
 where
-	poblacion = "Barcelona"
+	poblacion = 'Barcelona'
 order by
 	nombre;
 
@@ -90,7 +90,7 @@ select
 from
 	clientes
 where
-	nombre like "Ma%";
+	nombre like 'Ma%';
 
 -- Clientes cuya ciudad termina con a
 select
@@ -98,4 +98,4 @@ select
 from
 	clientes
 where
-	poblacion like "%a";
+	poblacion like '%a';

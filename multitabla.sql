@@ -2,9 +2,9 @@ insert into
 	clientes (nombre, poblacion, telefono)
 values
 	(
-		"Luis Bárcenas",
-		"Soto del Real",
-		"600000000"
+		'Luis Bárcenas',
+		'Soto del Real',
+		'600000000'
 	);
 
 -- visualizar todos los viajes de cada mayorista, mostrando los campos nombre, precio, duración y nombre del mayorista:
@@ -20,9 +20,9 @@ from
 -- Visualizar viajes vendidos con datos de clientes, además de salir el nuevo cliente que no ha comprado viajes.
 select
 	clientes.nombre,
-	viajes.nombre as "se va a",
+	viajes.nombre as 'se va a',
 	viajes.duracion as días,
-	viajes.precio as "ha pagado"
+	viajes.precio as 'ha pagado'
 from
 	clientes
 	left join ventas on clientes.idcliente = ventas.idcliente
@@ -42,7 +42,7 @@ from
 SELECT
 	viajes.nombre,
 	viajes.precio,
-	clientes.nombre as "vendido a"
+	clientes.nombre as 'vendido a'
 FROM
 	ventas,
 	clientes,
