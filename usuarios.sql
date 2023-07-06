@@ -9,11 +9,3 @@ create table usuarios (
 	index (roles_idRol),
 	foreign key (roles_idRol) references roles(idRol)
 ) ENGINE = INNODB;
-
--- Insertar los usuarios
-INSERT INTO
-	usuarios (email, password, token, roles_idRol)
-VALUES
-	('quico@google.com', '123456', '', 1),
-	('bilal@google.com', '123456', '', 2),
-	('javi@google.com', '123456', '', 2),
